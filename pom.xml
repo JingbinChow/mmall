@@ -248,6 +248,19 @@
             <artifactId>jedis</artifactId>
             <version>2.9.0</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.rocketmq/rocketmq-client -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+
+
+
+
+
     </dependencies>
 
 
