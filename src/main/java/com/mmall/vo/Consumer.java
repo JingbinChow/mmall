@@ -42,6 +42,7 @@ public class Consumer {
                 for (int i=0 ; i<msgs.size();i++){
                     try {
                         System.out.println("消费了一条消息："+new String(msgs.get(i).getBody(),"utf-8"));
+                        System.out.println("消费了一条消息："+new String(msgs.get(i).getBody(),"utf-8"));
                     } catch (UnsupportedEncodingException e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
