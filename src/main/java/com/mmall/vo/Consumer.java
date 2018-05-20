@@ -51,19 +51,6 @@ public class Consumer {
                     }
                 }
 
-//                for(MessageExt mext : msgs) {
-//                    try {
-//                        System.out.println("消费了一条消息："+new String(mext.getBody(),"utf-8"));
-//                    } catch (UnsupportedEncodingException e) {
-//                        // TODO Auto-generated catch block
-//                        e.printStackTrace();
-//                        //消费失败告诉mq重新发送继续消费  如果多次消费仍不成功可以记录在数据库中，可以通过mext.getReconsumeTimes()获取消费次数
-//                        return ConsumeConcurrentlyStatus.RECONSUME_LATER;
-//                    }
-//                }
-                /*
-                 * 告诉mq消费成功
-                 */
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
 
 
