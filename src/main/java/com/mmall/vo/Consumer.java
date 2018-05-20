@@ -47,6 +47,7 @@ public class Consumer {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                         //消费失败告诉mq重新发送继续消费  如果多次消费仍不成功可以记录在数据库中，可以通过mext.getReconsumeTimes()获取消费次数
+                        //ces
                         return ConsumeConcurrentlyStatus.RECONSUME_LATER;
                     }
                 }
